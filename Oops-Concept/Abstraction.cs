@@ -13,10 +13,11 @@ namespace Oops_Concept
         public int Id;
         public string Name;
 
+
         public Abstraction(int UserId, string UserName)
         {
-            UserId = Id;
-            UserName = Name;
+            Id =UserId;
+            Name = UserName;
         }
 
         public abstract void employee();

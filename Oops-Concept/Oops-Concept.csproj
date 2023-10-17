@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Oops_Concept.PersonData</StartupObject>
+    <StartupObject>Oops_Concept.MainPayment</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstraction.cs" />
+    <Compile Include="AbstractionPayment.cs" />
     <Compile Include="Inheritance.cs" />
     <Compile Include="InheritanceTask.cs" />
     <Compile Include="LoggerClass.cs" />
