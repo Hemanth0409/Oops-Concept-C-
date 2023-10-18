@@ -33,7 +33,7 @@ namespace Oops_Concept
         public int Amount { get; set; }
     }
     public class Paypal
-    {
+    {     
         public int AccountNumber { get; set; }
         public int cvv { get; set; }
 
@@ -51,11 +51,10 @@ namespace Oops_Concept
             UserName = userName;
 
         }
-
-
         public abstract void PaymentMethod();
     }
 
+    
     public class CreditCardPayment : AbstractionPayment
     {
         private CreditCard _credit { get; set; }

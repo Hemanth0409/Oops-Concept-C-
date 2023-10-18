@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EB251869-E531-405C-B4A6-CCBBE5EBDDB0}</ProjectGuid>
+    <ProjectGuid>{1F65A634-F4CA-4203-9DD0-DE8E70F8F11E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Oops_Concept</RootNamespace>
-    <AssemblyName>Oops-Concept</AssemblyName>
+    <RootNamespace>AccessModifiers</RootNamespace>
+    <AssemblyName>AccessModifiers</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Oops_Concept.AccessModifiersMain</StartupObject>
+    <StartupObject>AccessModifiers.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,17 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstraction.cs" />
-    <Compile Include="AbstractionPayment.cs" />
-    <Compile Include="AccessModifiers.cs" />
-    <Compile Include="Inheritance.cs" />
-    <Compile Include="InheritanceTask.cs" />
-    <Compile Include="LoggerClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Oops-Concept\Oops-Concept.csproj">
+      <Project>{eb251869-e531-405c-b4a6-ccbbe5ebddb0}</Project>
+      <Name>Oops-Concept</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

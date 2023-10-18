@@ -31,7 +31,7 @@ namespace Oops_Concept
             Console.WriteLine();
         }
     }
-    public class StudentData : ChildrenData
+    internal class StudentData : ChildrenData
     {
         private Student _studentObj { get; set; }
         public StudentData(Student studentObj) : base(studentObj)
@@ -45,7 +45,7 @@ namespace Oops_Concept
 
         }
     }
-    public class EmployeeData : StudentData
+    internal class EmployeeData : StudentData
     {
         public int DegreePassOutYear;
         public string Degree;
@@ -65,6 +65,7 @@ namespace Oops_Concept
         }
     }
 
+   
     public class Children
     {
         public string FirstName { get; set; }
